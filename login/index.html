@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <!-- <link rel="stylesheet" href="bootstrap-5.3.2-dist/css/bootstrap.min.css"> -->
+
+
+
+
+  
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+
+  <link rel="stylesheet" href="style2.css">
+</head>
+
+<body>
+
+  <div class="firstContainer ">
+    <nav id="Nav" class="navBar " onscroll="onScroll()">
+        <a id="logo"href="#" ><img class="img-fluid" src="1.png"></a>
+        <ul class="navLinks ">
+            <li class="navLi"><a href="../index.html">HOME</a></li>
+            <li class="navLi"><a href="../About/About.html">ABOUT</a></li>
+            <li class="navLi"><a href="../portfolio/portfolio.html">PORTFOLIO</a></li>
+            <li class="navLi"><a href="../Contact/index.html">CONTACT</a></li>
+            <li class="navLi"><a href="../login/index.html"> LOGIN </a> / <a href="../login/index.html"> REGISTRATION </a></li>
+        </ul>
+        <div class="icons">
+            <span id="searchIcon"class="navLi"><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></span>
+            <input id="searchBar" type="text" placeholder="Search...">
+            <span id="menuIcon" ><a href="#"><i class="fa-solid fa-bars"></i></a></span>
+        </div>
+    </nav>
+</div>
+
+  <div class="login">
+    <img src="img.jpeg" class="img-thumbnail d-none d-md-block float-start" style="width: 800px; height: 600px;">
+
+    <div class="vLogin">
+      <h2>User Login</h2>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <form action="#" onsubmit="return validateForm()">
+              <div class="form-group">
+                <input type="text" placeholder="USERNAME OR EMAIL" id="con_uname" name="con_fname"
+                  class="form-control">
+              </div>
+              <div class="form-group">
+                <input type="password" placeholder="PASSWORD" id="con_password" name="con_lname"
+                  class="form-control">
+              </div>
+              <div class="gridgum_select-box">
+                <div class="gridgum_select-box-default square-box">
+                  <input type="checkbox" name="remember_me" id="checkbox11">
+                  <label for="checkbox11" class="m-0">REMEMBER ME</label>
+                </div>
+              </div>
+              <p><a href="#">Forgot Password ?</a></p>
+              <input type="submit" value="Submit" class="btn btn-primary">
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="bootstrap-5.3.2-dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+  <script src="script2.js"></script>
+</body>
+
+</html>

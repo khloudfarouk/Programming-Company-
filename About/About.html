@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+<style>
+    body {
+        font-weight: 500;
+        font-family: 'Poppins', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        letter-spacing: .0625rem;
+        color: #55565b;
+        font-size: .80rem;
+        line-height: 2.1;
+    }
+    
+    .main-description {
+        text-align: center;
+    }
+    
+    .main-description p {
+        font-size: larger;
+    }
+    
+    .Service-description {
+        width: 100%;
+        margin-top: 50px;
+    }
+    
+    .Service-description img {
+        display: inline-block; 
+        width: 50%;
+        height: auto;
+        border-radius: 8px;
+        margin-right: 5%;
+    }
+    
+    .Service-description p  {
+        display: inline-block; 
+        vertical-align: top; 
+        width: 40%; 
+    }
+    
+    @media (max-width: 600px) {
+    .Service-description img {
+        width: 100%;
+        margin-right: 0;
+    }
+
+    .Service-description p {
+        width: 100%;
+    }
+}
+    
+.navBar{
+width:100vw;
+top: 0px;
+height: 60px;
+position:fixed;
+z-index: 2;
+display: flex;
+justify-content:space-around;
+align-items: center;
+} 
+.navLinks{
+    list-style-type: none;
+    display: flex;
+    justify-content:space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width:60%;
+    margin: 0px;
+}
+.icons a{
+    font-size: 20px;
+    color: black;
+
+}
+.icons #searchIcon{
+margin-right: 20px;
+}
+
+.navBar img{
+    width: 60px;
+}
+
+.navLinks a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+@media only screen and (max-width: 1200px) {
+    li.navLi {
+        display: none;
+    }
+    li.iconList {
+        display: block; 
+    }
+
+}
+.navLinks.show {
+    flex-direction: column;
+    position: absolute;
+    top: 60px; 
+    right: 0;
+    width: 450px;
+    background-color: #f8f8f8;
+    z-index: 1;
+}
+
+.navLinks.show li {
+    display: block;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+.navLinks.show #logo {
+    display: none;
+}
+.navLinks.show #menuIcon {
+    display: none;
+}
+
+.navLinks.show #searchBar {
+margin-top: 45%;
+width: 70%;
+height: 10%;
+}
+#searchIcon {
+    cursor: pointer;
+}
+
+#searchBar {
+    display: none;
+    position: absolute;
+    top: 20%;
+    right: 0;    
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+}
+    .contactHeader{
+        width: 100%;
+        text-align: center;
+        position: relative;
+        margin-top: 10%;
+        background-color: rgb(231, 227, 227);
+        height: 300px;
+        padding-top: 7%;
+    }
+    .contactHeader h1{
+        color: rgb(81, 80, 80);
+    }
+    .contactHeader p{
+        color: gray;
+    }
+    .row{
+        justify-content:space-around ;
+        flex-wrap: wrap;
+    }
+    .myForm input{
+        width: 40%;
+        height: 40px;
+        margin-bottom: 5%;
+        font-size: 20px;
+    }
+    #mess{
+        width: 90%;
+        height: 200px;
+        margin-bottom: 5%;
+    }
+    #mess-container {
+        display: flex;
+        justify-content: start;
+    }
+
+    
+    /* Responsive styles */
+    @media (max-width: 990px) {
+        .myForm input {
+            width: 100%;
+            margin-left: 0 !important;/* Reset the margin for smaller screens */
+        }
+    }
+    #sumb{
+        background-color: white;
+        border: 2px solid rgb(62, 61, 61);
+        border-radius: 5%;
+    }
+    #sumb:hover{
+        background-color: rgb(255, 95, 3);
+        color: white;
+    }
+    .emails:hover{
+        color: blue;
+    }
+    .responsive-map-container {
+        position: relative;
+        overflow: hidden;
+        padding-top: 56.25%; 
+    }
+    
+    .responsive-map-container iframe {
+        position: absolute;
+        top: 10%;
+        left: 0;
+        width: 100%;
+        height: 80%;
+        border: 0;
+    }
+        .footer-logo img {
+            max-width: 100%;
+            height: auto;
+        }
+    
+        .newsletter-form input {
+            width: 70%;
+            display: inline-block;
+        }
+    
+        .footer-nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+    
+        .footer-nav li {
+            margin-bottom: 10px;
+        }
+    
+        .footer-bottom {
+            background-color: black;
+            color: rgb(173, 169, 169);
+            padding: 20px 0;
+            margin-top: auto;
+        }
+    
+        .social-network {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+    
+        .social-network li {
+            display: inline-block;
+            margin-right: 10px;
+        }
+    
+        .footer-content {
+            margin-top: auto;
+            color: rgb(173, 169, 169);
+        }
+        .footer-bottom a{
+            text-decoration: none;
+            color:  rgb(173, 169, 169);
+        }
+        .footer-bottom a:hover{
+            
+            color: white;
+        }
+        .endIcons i{
+            margin-left: 10%;
+            font-size: 20px;
+        }
+    
+
+</style>
+</head>
+
+<body>
+
+    <div class="firstContainer ">
+        <nav id="Nav" class="navBar " onscroll="onScroll()">
+            <a id="logo"href="../index.html" ><img class="img-fluid" src="1.png"></a>
+            <ul class="navLinks ">
+                <li class="navLi"><a href="../index.html">HOME</a></li>
+                <li class="navLi"><a href="About.html">ABOUT</a></li>
+                <li class="navLi"><a href="../portfolio/portfolio.html">PORTFOLIO</a></li>
+                <li class="navLi"><a href="../Contact/index.html">CONTACT</a></li>
+                <li class="navLi"><a href="../login/index.html"> LOGIN </a> / <a href="../login/index.html"> REGISTRATION </a></li>
+            </ul>
+            <div class="icons">
+                <span id="searchIcon"class="navLi"><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></span>
+                <input id="searchBar" type="text" placeholder="Search...">
+                <span id="menuIcon" ><a href="#"><i class="fa-solid fa-bars"></i></a></span>
+            </div>
+        </nav>
+    </div>
+    
+        <header class="contactHeader">
+            <h1>About US</h1>
+            <p>HOME / CONTACT US</p>
+        </header>
+    <div class="main-description">
+        
+        <p>Welcome to our company, where business innovation meets strategic consulting excellence. Our company is a
+            dynamic force in the realm of business and consulting, dedicated to empowering organizations to thrive in an
+            ever-evolving marketplace.
+
+            At our company, we understand that success in today's business landscape requires more than just
+            conventional strategies. It demands adaptability, creativity, and a forward-thinking approach. As a leading
+            business and consulting company, we specialize in providing comprehensive solutions that propel your
+            organization towards sustainable growth and success.</p>
+    </div>
+
+    <div class="Service-description">
+        
+        <div class="Service-description-container">
+            <img src="960x0.webp" alt="">
+            
+            <p>
+                
+                Our team of seasoned consultants brings a wealth of experience in crafting robust
+                business strategies tailored to your unique needs. Whether you're a startup seeking guidance or an
+                established enterprise aiming for transformation, we offer strategic insights that drive results.
+
+                Innovation and Technology Integration: Embrace the future with our cutting-edge solutions that leverage
+                the latest technological advancements. We help businesses integrate innovation seamlessly, ensuring they
+                stay ahead of the curve and remain competitive in today's digital age.
+            </p>
+        </div>
+        <div class="Service-description-container">
+            
+            <p style="margin-right: 3%;">
+                Navigate the complex financial landscape with confidence. Our financial experts
+                provide meticulous analysis, strategic planning, and risk management to optimize your financial
+                performance and enhance shareholder value.
+
+                Operational Excellence: Streamline your operations and enhance efficiency with our proven methodologies.
+                We work closely with your team to identify areas for improvement, implement streamlined processes, and
+                maximize productivity.
+
+                Market Research and Analysis: Stay informed and make informed decisions. Our comprehensive market
+                research and analysis services provide valuable insights into industry trends, consumer behavior, and
+                competitive landscapes, enabling you to make strategic choices that drive success.
+            </p>
+            <img src="f363771ad3c072ec71f1ea5e8f3868d18de231a6-1200x800-1.jpg" alt="" >
+        </div>
+
+        <div class="Service-description-container">
+            <img src="stock-market-exchange-economics-investment-graph.webp" alt="">
+            <p>
+                Proven Track Record: Our success stories speak for themselves. We have a track record of delivering
+                tangible results and driving positive change for our clients across diverse industries.
+
+                Client-Centric Approach: Your success is our priority. We collaborate closely with clients, ensuring a
+                deep understanding of their objectives and tailoring our solutions to meet their specific needs.
+
+                Innovative Solutions: In a rapidly changing business environment, innovation is key. We pride ourselves
+                on delivering creative, forward-thinking solutions that position our clients as leaders in their
+                respective industries.
+
+                Global Perspective, Local Expertise: With a global mindset and local expertise, we navigate the
+                complexities of the international business landscape, providing insights that transcend borders.
+
+                Explore the limitless possibilities for your business with [Company Name]. Together, we'll redefine
+                success and chart a course for a future of unparalleled growth and prosperity. Welcome to a partnership
+                that goes beyond consulting – welcome to a future of limitless possibilities.
+            </p>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <div class="container">
+        <div class="row">
+            <!-- Logo Section -->
+            <div class="col-lg-2">
+            <div class="footer-logo mt-2">
+                <img src="1.png" alt="image-description" style="width: 80px;">
+            </div>
+            </div>
+            <!-- Email Section -->
+            <div class="col-lg-4">
+            <div class="gridgum_newsletter-form newsletter-v1 mt-2">
+                <form action="#" method="post">
+                <fieldset class="clearfix">
+                    <div class="form-group input-holder">
+                    <input type="email" class="form-control bg-light" placeholder="Email Address">
+                    <button type="submit" class="btn"><i class="fa fa-send"></i></button>
+                    </div>
+                </fieldset>
+                </form>
+            </div>
+            <div class="my-4">
+                <p>Lorem ipsum dolor sit amet, consec tetur adipisicing elit, sed do eiusmod tempor.</p>
+            </div>
+            </div>
+            <!-- Menu, Pages, Others Sections -->
+            <div class="col-lg-2">
+            <h4>Menu</h4>
+            <div class="footer-nav">
+                <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Blog</a></li>
+                </ul>
+            </div>
+            </div>
+            <div class="col-lg-2">
+            <h4>Pages</h4>
+            <div class="footer-nav">
+                <ul>
+                <li><a href="#">Blog Post</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Login</a></li>
+                <li><a href="#">Registration</a></li>
+                </ul>
+            </div>
+            </div>
+            <div class="col-lg-2">
+            <h4>Others</h4>
+            <div class="footer-nav">
+                <ul>
+                <li><a href="#">Search</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Contact us</a></li>
+                </ul>
+            </div>
+            </div>
+        </div>
+        <!-- Additional content within the footer at the bottom -->
+        <div class="row lastDiv">
+            <div class="col-md-6 pb-3">
+                <p>Copyright 2024 - GRIDGUM</p>
+            </div>
+            <div class="col-md-6 pb-3 endIcons">
+                <a  href="#" >  <i class="fa-brands fa-facebook"></i></a>
+                <a href="#"> <i class="fa-brands fa-twitter"></i></a>
+                <a href="#">  <i class="fa-brands fa-google-plus-g"></i></a>
+                <a href="#">   <i class="fa-solid fa-basketball"></i></a>
+                <a href="#">   <i class="fa-brands fa-pinterest"></i></a>
+            </div>
+    
+            
+        
+        </div>
+        
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
